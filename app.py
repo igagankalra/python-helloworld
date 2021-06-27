@@ -23,6 +23,19 @@ def status():
             mimetype='application/json'
     )
     app.logger.info('Status request successfull')
+    return response@app.route("/status")
+
+@app.route("/author")
+def author():
+    response = app.response_class(
+            response=json.dumps({"Author Name":"Gagan Kalra",
+                "Github": "@igagankalra(https://github.com/igagankalra)",
+                "Twitter": "@igagankalra(https://twitter.com/igagankalra)"
+            }),
+            status=200,
+            mimetype='application/json'
+    )
+    app.logger.info('Status request successfull')
     return response
 if __name__ == "__main__":
     logging.basicConfig(filename='app.log',level=logging.DEBUG)
