@@ -1,4 +1,4 @@
-name: Test Code using pytest
+name: Code Test
 on: [push]
 jobs:
   build:
