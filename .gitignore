@@ -1,1 +1,7 @@
+# General Files
 *.log
+
+# Python
+**/__pycache__/*
+**/.pytest_cache/*
+.pytest_cache/*
