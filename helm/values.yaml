@@ -1,0 +1,8 @@
+namespace:
+  name: Test
+
+image:
+  repository: igagankalra/gk-python-helloworld
+  tag: latest
+
+replicaCount: 4
