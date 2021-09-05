@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-argocd 
+  name: nginx-alpine
   namespace: argocd
 spec:
   destination:
