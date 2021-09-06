@@ -10,7 +10,7 @@ resources:
   cpu: 50m
   memory: 256Mi
 
-replicaCount: 6
+replicaCount: 3
 
 service:
   port: 8111
