@@ -22,9 +22,9 @@ spec:
     spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: {{ .Values.image.imagePullPolicy }}
         name: python-helloworld
         resources:
           requests:
-            cpu: 50m
-            memory: 256Mi
+            cpu: {{ .Values.resources.cpu }}
+            memory: {{ .Values.resources.memory }}
