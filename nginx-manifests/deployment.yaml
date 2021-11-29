@@ -4,10 +4,10 @@ metadata:
   labels:
     app: nginx
     tag: alpine
-  name: nginx-alpine
-  namespace: demo
+  name: techtrends
+  namespace: sandbox
 spec:
-  replicas: 6
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -24,6 +24,6 @@ spec:
         tag: alpine
     spec:
       containers:
-      - image: nginx:alpine
+      - image: igagankalra/techtrends:latest
         imagePullPolicy: IfNotPresent
-        name: nginx-alpine
+        name: techtrends
